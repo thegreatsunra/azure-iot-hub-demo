@@ -1,6 +1,6 @@
 const iothub = require('azure-iothub')
 
-const connectionString = '{your_iothub_connection_string}'
+const connectionString = '{your_iothubowner_connection_string}'
 
 const registry = iothub.Registry.fromConnectionString(connectionString)
 

@@ -1,5 +1,5 @@
 const EventHubClient = require('azure-event-hubs').Client
-const connectionString = '{your_iothub_connection_string}'
+const connectionString = '{your_iothubowner_connection_string}'
 
 const printError = (err) => {
   console.log(err.message)
