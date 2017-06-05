@@ -15,9 +15,12 @@ registry.create(device, (err, deviceInfo, res) => {
   }
 })
 
-function printDeviceInfo(err, deviceInfo, res) {
+function printDeviceInfo (err, deviceInfo, res) {
   if (deviceInfo) {
     console.log('Device ID: ' + deviceInfo.deviceId)
     console.log('Device key: ' + deviceInfo.authentication.symmetricKey.primaryKey)
+  }
+  if (err) {
+    console.log(err)
   }
 }

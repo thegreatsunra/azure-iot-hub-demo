@@ -16,7 +16,9 @@ client.open()
   .then(client.getPartitionIds.bind(client))
   .then((partitionIds) => {
     return partitionIds.map((partitionId) => {
-      return client.createReceiver('$Default', partitionId, { 'startAfterTime' : Date.now()}).then((receiver) => {
+      return client.createReceiver('$Default', partitionId, {
+        'startAfterTime': Date.now()
+      }).then((receiver) => {
         console.log('Created partition receiver: ' + partitionId)
         receiver.on('errorReceived', printError)
         receiver.on('message', printMessage)
