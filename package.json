@@ -1,0 +1,17 @@
+{
+  "name": "azure-iot-hub-demo",
+  "version": "0.1.0",
+  "description": "Stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dane Petersen",
+  "license": "MIT",
+  "dependencies": {
+    "azure-event-hubs": "^0.0.8",
+    "azure-iot-device": "^1.1.14",
+    "azure-iot-device-mqtt": "^1.1.14",
+    "azure-iothub": "^1.1.11"
+  }
+}
